@@ -978,8 +978,7 @@ Esb=(navigator.userAgent.toLowerCase().indexOf("safari")>=0);
 TIS(GE("treemargin"));
 if(staticMode){
 Ewr=false;
-//Efo=GV("founderid");
-Efo="Shabbir, Saqib and Akber";
+Efo=GV("founderid");
 var h=new String(window.location.hash);
 if(h.length&&(h.charAt(0)=="#")){
 h=h.substring(1);
@@ -998,8 +997,7 @@ ERP(false);
 }else{
 Ewr=true;
 Ead=true;
-//Efo=GV("personid");
-Efo="Shabbir, Saqib and Akber";
+Efo=GV("personid");
 var fi=GV("familyid");
 var ic=GV("importcacheid");
 if(fi||ic){
@@ -1158,10 +1156,10 @@ fc++;
 NCP(fc);
 if((staticMode||GV("familyid"))&&Efo&&Efa[Efo]){
 if(!staticMode){
-var _26=GE("lfamilyinfo"),_27="Founded by "+Efa[Efo].n,_28="<a href=\"\" onclick=\"ESM('history'); return false\">View history...</a>";
+var _26=GE("lfamilyinfo"),_27="Founded by Shabbir, Saqib and Akber",_28="<a href=\"\" onclick=\"ESM('history'); return false\">View history...</a>";
 _26.innerHTML=EH(_27)+" - "+_28;
 }else{
-ST("lfamilyinfo",(Efo&&Efa[Efo])?("Founded by "+Efa[Efo].n):"");
+ST("lfamilyinfo",(Efo&&Efa[Efo])?("Founded by Shabbir, Saqib and Akber"):"");
 }
 }else{
 ST("lfamilyinfo","");
